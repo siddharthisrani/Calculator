@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        function del(){
+            let mystr=document.getElementById('txt').value;
+            let ans=mystr.substr(0,mystr.length-1);
+            document.getElementById('txt').value=ans;
+
+        }
+       function display(){
+        let mystyle=document.getElementById('box1').value;
+        var st=document.getElementById('box1');
+        st.style.backgroundColor="black";
+        
+        
+        var st1=document.getElementById('butnC');
+        st1.style.backgroundColor="red";
+
+        var st=document.getElementById('refresh');
+        st.innerHTML="Please Refresh"; 
+        st.style.color="white";
+        st.style.marginLeft="1230px";
+        st.style.marginTop="-20px";   
+       }
+
+    </script>
+</head>
+<body id="box1">
+    
+    <h1 id="cal">Calculator</h1>
+    <div  style="text-align: right;"><input onclick="display()" type="checkbox" id="demo">Check for Dark mode</div>
+    <p id="refresh" ></p>
+    <div id="box">
+        <input type="text" id="txt">
+        <button onclick="document.getElementById('txt').value=''" id="butnC">C</button>
+
+   <button onclick="del()" id="butnDel">DEL</button>
+
+  <button onclick="document.getElementById('txt').value+=document.
+  getElementById('butndiv').value" value="%" id="butndiv">%</button>
+
+<button onclick="document.getElementById('txt').value+=document.
+getElementById('butndiv2').value" value="/" id="butndiv2">/</button>
+        
+        <button onclick="document.getElementById('txt').value+=document.
+        getElementById('butn7').value" value="7" id="butn7">7</button>
+
+        <button onclick="document.getElementById('txt').value+=document.
+          getElementById('butn8').value" value="8" id="butn8">8</button>
+
+        <button onclick="document.getElementById('txt').value+=document.
+          getElementById('butn9').value" value="9" id="butn9">9</button>
+
+        <button onclick="document.getElementById('txt').value+=document.
+            getElementById('butnmul').value" value="*" id="butnmul">*</button>
+            
+        <button onclick="document.getElementById('txt').value+=document.
+         getElementById('butn4').value" value="4" id="butn4">4</button>
+
+        <button onclick="document.getElementById('txt').value+=document.
+          getElementById('butn5').value" value="5" id="butn5">5</button>
+
+       <button onclick="document.getElementById('txt').value+=document.
+        getElementById('butn6').value" value="6" id="butn6">6</button>
+
+       <button onclick="document.getElementById('txt').value+=document.
+        getElementById('butnmin').value" value="-" id="butnmin">-</button>
+
+      <button onclick="document.getElementById('txt').value+=document.
+      getElementById('butn1').value" value="1" id="butn1">1</button>
+
+     <button onclick="document.getElementById('txt').value+=document.
+        getElementById('butn2').value" value="2" id="butn2">2</button>
+
+    <button onclick="document.getElementById('txt').value+=document.
+      getElementById('butn3').value" value="3" id="butn3">3</button>
+
+    <button onclick="document.getElementById('txt').value+=document.
+      getElementById('butnplus').value" value="+" id="butnplus">+</button>
+
+   <button onclick="document.getElementById('txt').value+=document.
+    getElementById('butn00').value" value="00" id="butn00">00</button>
+
+  <button onclick="document.getElementById('txt').value+=document.
+   getElementById('butn0').value" value="0" id="butn0">0</button>
+
+  <button onclick="document.getElementById('txt').value+=document.
+  getElementById('butndot').value" value="." id="butndot">.</button>
+
+<button onclick="document.getElementById('txt').value=eval(document.
+getElementById('txt').value)" value="=" id="butnequal">=</button>
+    </div>
+    
+</body>
+</html>

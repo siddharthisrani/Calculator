@@ -1,0 +1,74 @@
+*{
+    margin :0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: url('./img3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box{
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    /* border: 1px solid #717377; */
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: black;
+    box-shadow: 5px 5px 7px skyblue;
+
+}
+#txt{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 2px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84,84,84,0.1);
+    font-size: 40px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+}
+txt::placeholder{
+    color: white;
+}
+button{
+    /* display: flex; */
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px 26px 10px 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,.5);
+    cursor: pointer;
+}
+#butnmin{
+    color:orange
+}
+#butnplus{
+    color:orange
+}#butndiv{
+    color:orange
+}#butnmul{
+    color:orange
+}
+#butndiv2{
+    color:orange
+}
+#butnDel{
+    color:orange
+}
+#butnC{
+    color:orange
+}
+#butnequal{
+   background-color:#fb7c14
+}
+
